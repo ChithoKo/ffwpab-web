@@ -1,0 +1,39 @@
+
+{{#postresponses}}
+<div class="comment-info">
+	<div class="comment-img"><img src="{{usericon}}" alt="{{prid}}"/></div>
+	<div class='comment-con'>
+		<div class="comment-user">
+			<span class="comment-username"><a href="{{userLink}}">{{username}}</a></span>
+			<span class="comment-content">{{content}}</span>
+		</div>
+		<div class="comment-response">
+			<span class="comment-like"><a href="#">Like</a></span>
+			-
+			<span class='comment-reply outer-reply'><a href="#">Reply</a></span>
+			-
+			<span class='comment-time'>{{commenttime}}</span>
+		</div>
+	</div>
+	<div class='comment-replies'>
+	{{#responseReplies}}
+		<div class='comment-reply-con comment-info'>
+			<div class="comment-img"><img src="{{usericon}}" alt="{{prid}}" /></div>
+			<div class='comment-con'>
+				<div class="comment-user">
+					<span class="comment-username"><a href="{{userLink}}">{{username}}</a></span>
+					<span class="comment-content">{{content}}</span>
+				</div>
+				<div class="comment-response">
+					<span class="comment-like"><a href="#">Like</a></span>
+					-
+					<span class='comment-reply'><a href="#">Reply</a></span>
+					-
+					<span class='comment-time'>{{commenttime}}</span>
+				</div>
+			</div>
+		</div>
+	{{/responseReplies}}
+	</div>
+</div>
+{{/postresponses}}

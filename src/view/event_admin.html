@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%= htmlWebpackPlugin.options.title %> ffwpa b web</title>
+
+		<!-- <link rel='stylesheet' type='text/css' href='../css/main.css' />
+		<link rel='stylesheet' type='text/css' href='../css/navigate.css'/>
+		<link rel='stylesheet' type='text/css' href='../css/event.css' />
+		<link rel='stylesheet' type='text/css' href='../css/subnavi.css' /> -->
+		
+	</head>
+
+	<body>
+
+		<%= require('html-loader!./layout/navigate.html') %>
+		<%= require('html-loader!./layout/sub-navi.html') %>
+
+
+		<div class="page-title">
+			<p>香港聖約翰救傷隊</p>
+			<p>漁民B支隊 集會時間表</p>
+		 </div>
+
+		<div class="events-list">
+
+			<div class="event-title events">
+
+				<!-- Box for admin adding event  -->
+				<div class="add-event" id='add-event-admin'>
+					<div class="add-title linkBox" ><div class='title-holder'><div class='title-con'>Add Duty</div><div class='title-icon'>+</div></div></div>
+					<div class="add-con showbox">
+						<div class="add-date">
+							<input class="add-day" type="text" name="" placeholder="日" />
+							/
+							<input class="add-month" type="text" name="" placeholder="月" />
+							/
+							<input class="add-year" type="text" name="" placeholder="年" />
+						</div>
+						<div class="add-time">
+							<input class="add-starttime" type="text" name="" placeholder="開始時間...    e.g. 08:00" />
+							to
+							<input class="add-endtime" type="" name="" placeholder="結束時間    e.g. 19:00" >
+						</div>
+						<div class="add-venue">
+							<input class='add-venue-data' type="text" name="" placeholder="地點..." >
+						</div>
+						<div class="add-eventname">
+							<input class="add-eventname-data" type="text" name="" placeholder="題目..." >
+						</div>
+						<div class="add-pic">
+							<input class='add-pic-data' type="text" name="" placeholder="負責人..." >
+						</div>
+						<div class="add-note">
+							<textarea class='addnote-data' placeholder="備註..."></textarea>
+						</div>
+						<div class="submit-btn admin-btn">
+							<button>Submit</button>
+						</div>
+					</div>
+				</div>
+			
+				<div class="event-date">日期
+				</div><div class="event-time">時間
+				</div><div class="event-venue">地點
+				</div><div class="eventname">題目
+				</div><div class="event-pic">負責人
+				</div><div class="event-note">備註
+				</div><div class="submit-btn"></div>
+			</div>
+
+
+			<div class="event-list">
+			</div>
+
+		</div>
+
+
+		<!-- <div class='resBox'>
+			成功添加
+		</div> -->
+
+		<!-- <script type='text/javascript' src='../js/jquery-3.2.1.js' ></script>
+		<script type='text/javascript' src='../js/common.js' ></script>
+		<script type='text/javascript' src='../js/doAdmin.js'></script> -->
+		
+		<%= require('html-loader!./layout/footer.html') %>
+
+	</body>
+</html>

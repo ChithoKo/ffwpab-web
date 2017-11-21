@@ -1,0 +1,13 @@
+
+{{#eventList}}
+<div class="event-con events">
+	<div class="event-date eee"><span>{{date}}</span> ({{wkday}})
+	</div><div class="event-time"><div class='event-starttime eee'><span>{{starttime}}</span></div><br/>-<br/><div class='event-endtime eee'><span>{{endtime}}</span></div>
+	</div><div class="event-venue eee"><span>{{venue}}</span>
+	</div><div class="eventname eee"><span>{{eventname}}</span>
+	</div><div class="event-pic eee"><span>{{pic}}</span>
+	</div><div class="event-note eee"><span>{{note}}</span>
+	</div><div class="idvalue"><span>{{meetid}}</span>
+	</div><div class="event-btn"><button class='regis-btn'>參加</button></div>
+</div>
+{{/eventList}}

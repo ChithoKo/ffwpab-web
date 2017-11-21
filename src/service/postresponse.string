@@ -1,0 +1,16 @@
+
+{{#postresponses}}
+<div class="comment-info">
+	<div class="comment-img"><img src="../../image/cropped/50/{{usericon}}" /></div>
+	<div class="comment-user">
+		<span class="comment-username"><a href="{{userLink}}">{{username}}</a></span>
+		<span class="comment-content">{{content}}</span>
+	</div>
+	<div class="comment-response">
+		<span class="comment-like"><a href="#">Like</a></span>
+		-
+		<span class='comment-reply'><a href="#">Reply</a></span>
+		<span class='comment-time'>{{commenttime}}</span>
+	</div>
+</div>
+{{/postresponses}}

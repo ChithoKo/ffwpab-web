@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%= htmlWebpackPlugin.options.title %> ffwpa b web</title>
+
+		<!-- <link rel='stylesheet' type='text/css' href='../css/main.css' />
+		<link rel='stylesheet' type='text/css' href='../css/navigate.css'/>
+		<link rel='stylesheet' type='text/css' href='../css/event.css' />
+		<link rel='stylesheet' type='text/css' href='../css/subnavi.css' /> -->
+		
+	</head>
+
+	<body>
+
+		<%= require('html-loader!./layout/navigate.html') %>
+
+
+		<div class="side-bar">
+			<h3>待處理申請</h3>
+			<ul>
+				<li><a href="#" class=''><span class='option-icon'>X</span> 隊員登記管理  <span class='go-icon'>></span></a></li>
+				<li><a href="#" class=''><span class='option-icon'>X</span> 報更隊員管理  <span class='go-icon'>></span></a></li>
+				<!-- <li><a href="#"><span class='option-icon'>X</span> 集會管理  <span class='go-icon'>></span></a></li> -->
+				<li><a href="#" class=''><span class='option-icon'>X</span> 筆記管理  <span class='go-icon'>></span></a></li>
+				<li><a href="#" class=''><span class='option-icon'>X</span> 添加管理員  <span class='go-icon'>></span></a></li>
+				<li><a href="#" class='admin-logout'><span class='option-icon'>X</span> 註銷 Log Out  <span class='go-icon'>></span></a></li>
+			</ul>
+		</div>
+
+		<div class="main-container">
+			
+			<div class="member-regis-list">
+				<h3><span>隊員登記管理</span></h3>
+				<div class="con-title">
+					<div class="member-name list-attr">隊員姓名</div>
+					<div class="member-post list-attr">隊員職階</div>
+					<div class="member-time list-attr">登記時間</div>
+				</div>	
+
+				<div class="con-details">
+					<div class="member-regis-con regis-con">
+						<div class="member-name list-attr">visitor</div>
+						<div class="member-post list-attr">M 001</div>
+						<div class="member-time list-attr">11/11/2017</div>
+						<div class="member-approve list-attr"><span class="img-helper"></span><button>Approve</button></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="duty-regis-list">
+
+				<h3><span>報更隊員管理</span></h3>
+
+				<div class="con-title">
+					<div class="duty-member list-attr">隊員姓名</div>
+					<div class="duty-post list-attr">隊員職階</div>
+					<div class="duty-name list-attr">活動名稱</div>
+					<div class="duty-date list-attr">活動日期</div>
+					<div class="duty-time list-attr">參加時間</div>
+
+				</div>	
+
+				<div class="con-details">
+					<div class="member-regis-con regis-con">
+						<div class="duty-member list-attr">visitor</div>
+						<div class="duty-post list-attr">M 001</div>
+						<div class="duty-name list-attr">活動名稱</div>
+						<div class="duty-date list-attr">
+							<div class="date-date">11/11/2017</div>
+							<div class="date-time">12:00 - 21:00</div>
+						</div>
+						<div class="duty-time list-attr">
+							<div class="starttime"><input type="text" name="" value='12:00'></div>
+							-
+							<div class="endtime"><input type="text" name="" value='21:00'></div>
+						</div>
+						<div class="duty-approve list-attr"><span class="img-helper"></span><button>Approve</button></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- <div class='resBox'>
+			成功添加
+		</div> -->
+
+		<!-- <script type='text/javascript' src='../js/jquery-3.2.1.js' ></script>
+		<script type='text/javascript' src='../js/common.js' ></script>
+		<script type='text/javascript' src='../js/doAdmin.js'></script> -->
+		
+		<%= require('html-loader!./layout/footer.html') %>
+
+	</body>
+</html>

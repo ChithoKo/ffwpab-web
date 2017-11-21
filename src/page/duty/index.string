@@ -1,0 +1,22 @@
+
+
+{{#dutyList}}
+	<div class="duty-con duties" >
+		<div class="regis-event eee"><span>{{dutyname}}</span>
+		</div><div class="regis-date eee"><div class='date'><span>{{date}}</span> ({{wkday}})</div><br/><div class='timemark'><span>{{timemark}}</span></div>
+		</div><div class="regis-time"><div class='starttime eee'><span>{{starttime}}</span></div><br/>-<br/><div class='endtime eee'><span>{{endtime}}</span></div>
+		</div><div class="regis-venue eee"><span>{{venue}}</span>
+		</div><div class="regis-members">
+			{{#atdList}}
+				<div class='candidate'><img src='../../image/pekka1.jpg' /><div class='membername'>{{username}}</div ></div>
+			{{/atdList}}
+			{{^atdList}}
+				/
+			{{/atdList}}
+		</div><div class="regis-miss eee"><span>{{totalmembers}}</span>
+		</div><div class="regis-note eee"><span>{{note}}</span>
+		</div><div class="duty-btn">
+			<button class='regisbutton btn' type='button' ">報名</button>
+		</div>
+	</div>
+{{/dutyList}}

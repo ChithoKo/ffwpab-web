@@ -1,0 +1,286 @@
+/*
+* @Author: CharlesKo
+* @Date:   2017-10-13 17:58:49
+* @Last Modified by:   CharlesKo
+* @Last Modified time: 2017-11-15 17:37:40
+*/
+
+body {
+  background-color: #f2f2f2;
+  font-size: 12px; }
+
+#user {
+  width: 80%;
+  margin: 8rem auto 2.5rem auto;
+  position: relative;
+  background-color: white;
+  padding: 2.5rem;
+  overflow: hidden; }
+  #user #user-count {
+    margin: 2.5rem 2rem 1.25rem auto;
+    width: 50%;
+    min-width: 30rem; }
+  #user .user-count {
+    width: 23.333rem;
+    height: 3.333rem;
+    background-color: white;
+    text-align: center;
+    border: 0.4rem solid transparent;
+    border-bottom-color: #4080bf; }
+    #user .user-count h3 {
+      display: inline-block;
+      width: 10rem;
+      border-right: 1px solid #afafaf;
+      margin-top: 0.5rem;
+      padding: 0.5rem; }
+    #user .user-count span {
+      display: inline-block;
+      width: 9.1666rem;
+      margin: 0;
+      padding: 0.8333rem; }
+  #user #user-icon {
+    height: 35rem;
+    line-height: 35rem;
+    width: 34.5%;
+    max-width: 35rem;
+    position: relative;
+    float: left;
+    margin: 0 auto 0 4rem; }
+  #user .img-holder {
+    display: inline-block;
+    width: 95%;
+    position: relative;
+    line-height: 0;
+    vertical-align: middle;
+    border: 5px solid #f2f2f2; }
+    #user .img-holder img {
+      width: 100%; }
+    #user .img-holder .uploadImg {
+      position: absolute;
+      background: #000;
+      opacity: 0.4;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      color: #f2f2f2;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1rem;
+      display: none; }
+    #user .img-holder .uploadImg:hover {
+      opacity: 0.6; }
+  #user .img-holder:hover .uploadImg {
+    display: block; }
+  #user .userinfo {
+    margin: 2.5rem 2rem 1.25rem auto;
+    width: 50%; }
+  #user .user {
+    border: 5px solid transparent;
+    border-bottom-color: #ac3939;
+    width: 23.333rem;
+    text-align: center; }
+    #user .user h1 {
+      margin: 0.8rem auto; }
+  #user #user-name {
+    font-size: 20px; }
+  #user #user-post {
+    font-size: 15px; }
+  #user #user-status {
+    position: relative;
+    text-align: left;
+    vertical-align: bottom;
+    text-indent: 1rem;
+    border: 3px solid transparent;
+    border-bottom-color: #009999;
+    background-color: white; }
+    #user #user-status .status-note {
+      padding: 20px 0 15px 0; }
+      #user #user-status .status-note div {
+        width: 80%;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+        outline: none; }
+      #user #user-status .status-note button {
+        margin: 0;
+        vertical-align: middle; }
+    #user #user-status .editicon {
+      position: absolute;
+      padding: 20px 0;
+      right: -1rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none; }
+  #user #user-status:hover .editicon {
+    display: inline-block; }
+
+#event-tap {
+  width: 80%;
+  padding: 0;
+  margin: 50px auto;
+  border-bottom: 1px solid #bbb;
+  box-sizing: border-box;
+  color: #666; }
+  #event-tap h3 {
+    width: 20rem;
+    text-align: left;
+    margin-left: 4rem;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    font-weight: bold; }
+  #event-tap .event-tap {
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 2rem;
+    position: relative;
+    float: right;
+    color: #888;
+    font-size: 12px; }
+  #event-tap .event-tap:hover {
+    background: #e9e9e9; }
+  #event-tap .event-tap:first-child {
+    margin-right: 2rem; }
+  #event-tap .acting {
+    border: 1px solid #999;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 3px solid #F48024;
+    margin-top: -3px; }
+
+#event {
+  width: 100%;
+  margin-bottom: 3rem; }
+  #event .event {
+    min-height: 20rem;
+    width: 60%;
+    min-width: 60rem;
+    margin: 2.5rem auto 0rem auto;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    overflow: hidden;
+    border: 1px solid #e9ebee;
+    border-radius: 5px;
+    background: #fff;
+    position: relative; }
+    #event .event .line-line {
+      position: absolute;
+      left: 46%;
+      top: 2rem;
+      bottom: 2rem;
+      height: auto;
+      border: 1.5px solid #999; }
+  #event .event-vt {
+    position: relative;
+    float: left;
+    width: 46%;
+    height: 90%;
+    min-height: 16rem;
+    margin: 2rem 6rem 2rem 0; }
+    #event .event-vt .event-title {
+      padding: 1rem; }
+      #event .event-vt .event-title h2 {
+        font-size: 1.8rem; }
+    #event .event-vt div {
+      text-align: center; }
+    #event .event-vt h2, #event .event-vt p {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #ccc; }
+    #event .event-vt h2 {
+      font-size: 1rem; }
+    #event .event-vt p {
+      max-width: 76%; }
+  #event .event-details {
+    padding: 3rem 0 0 0;
+    width: 100%; }
+    #event .event-details #event-gallery {
+      width: 85%;
+      margin: 0 auto; }
+    #event .event-details img {
+      width: 6rem;
+      height: auto;
+      display: inline-block;
+      border: 0.1rem solid orange; }
+  #event .event-note p, #event .event-note span {
+    display: inline-block;
+    padding: 1.5rem;
+    vertical-align: top; }
+  #event .event-note p {
+    font-size: 15px;
+    padding-left: 0; }
+  #event .event-member h2 {
+    font-size: 1.3rem; }
+  #event .event-member li {
+    display: inline-block;
+    list-style-type: none;
+    width: 20%;
+    margin: 0 3px; }
+  #event .event-member .candidate {
+    margin: 3px auto;
+    width: 95%;
+    min-width: 7rem; }
+    #event .event-member .candidate img {
+      vertical-align: middle;
+      width: 2.3rem;
+      border: none; }
+  #event .event-member .membername {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-indent: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative; }
+    #event .event-member .membername .candidate-time {
+      position: absolute;
+      bottom: 2px;
+      font-size: 10px;
+      line-height: 5px;
+      color: #90949c; }
+
+.finished {
+  display: none; }
+
+.event-tap {
+  cursor: pointer; }
+
+#user-icon {
+  cursor: pointer; }
+
+.gallery {
+  width: 80%;
+  min-width: 60rem;
+  margin: 0 auto;
+  display: none; }
+  .gallery .gallery-img {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    cursor: pointer;
+    overflow: hidden; }
+    .gallery .gallery-img .img-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.4;
+      display: none; }
+    .gallery .gallery-img img {
+      width: 100%;
+      vertical-align: middle; }
+  .gallery .gallery-img:hover .img-cover {
+    display: block; }
+

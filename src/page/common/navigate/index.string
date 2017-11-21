@@ -1,0 +1,4 @@
+
+{{#navoptions}}
+	<li><a href='{{link}}'>{{optionname}}</a>{{#admin}}<span class='admin-icon'>admin</span>{{/admin}}</li>
+{{/navoptions}}

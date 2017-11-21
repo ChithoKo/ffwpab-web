@@ -1,0 +1,243 @@
+/*
+* @Author: CharlesKo
+* @Date:   2017-10-13 17:58:20
+* @Last Modified by:   CharlesKo
+* @Last Modified time: 2017-11-13 05:12:52
+*/
+
+body {
+  background-color: #f2f2f2;
+  font-size: 1.4rem; }
+
+#tablename {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem; }
+  #tablename h2 {
+    width: 30rem;
+    margin: 0 auto; }
+
+#addduty {
+  text-align: left;
+  border-bottom: 2.5rem solid #f2f2f2; }
+  #addduty .addtitle {
+    height: 4rem;
+    background-color: #f2f2f2;
+    border-bottom: 3px solid #f2f2f2; }
+  #addduty .title-holder {
+    display: inline-block;
+    background-color: #fdfdfd; }
+  #addduty .title-holder:hover {
+    background: #fafafa; }
+  #addduty .title-content, #addduty .title-icon {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    line-height: 4rem;
+    width: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    vertical-align: middle; }
+  #addduty .title-content {
+    width: 6rem;
+    padding: 0 0.5rem 0 1rem; }
+  #addduty .title-icon {
+    height: 3rem;
+    line-height: 3rem;
+    border-left: 2px solid #d9e6f2; }
+
+.showbox {
+  display: none; }
+
+#dutyform {
+  padding-top: 2rem; }
+  #dutyform div {
+    display: inline-block;
+    vertical-align: middle;
+    height: 5rem;
+    position: relative;
+    margin: 0.7rem 0; }
+  #dutyform p {
+    display: inline-block;
+    max-width: 10rem;
+    width: 27.5%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: right;
+    vertical-align: middle; }
+  #dutyform input, #dutyform textarea {
+    box-sizing: border-box;
+    padding: 0.4rem; }
+  #dutyform .adddutyname, #dutyform .addvenue, #dutyform .addtimemark, #dutyform .addstarttime, #dutyform .addendtime {
+    width: 48%; }
+    #dutyform .adddutyname input, #dutyform .addvenue input, #dutyform .addtimemark input, #dutyform .addstarttime input, #dutyform .addendtime input {
+      width: 65%; }
+  #dutyform .adddate {
+    width: 48%; }
+    #dutyform .adddate input {
+      width: 13%; }
+  #dutyform .addtotalmem {
+    width: 48%; }
+    #dutyform .addtotalmem p {
+      width: 27.5%; }
+    #dutyform .addtotalmem input {
+      width: 30%; }
+  #dutyform .addnote {
+    width: 48%; }
+    #dutyform .addnote p {
+      width: 16%; }
+    #dutyform .addnote textarea {
+      vertical-align: bottom;
+      height: 85%;
+      width: 77%; }
+  #dutyform .addsubmit {
+    height: 4rem;
+    width: 90%;
+    text-align: center;
+    padding: 2rem 1rem 0 1rem; }
+  #dutyform .subnote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    width: 27.5%; }
+
+#registration {
+  width: 80%;
+  min-width: 66rem;
+  margin: 2rem auto 3rem auto;
+  text-align: center; }
+  #registration a {
+    color: black;
+    display: inline-block;
+    background-color: #f2f2f2; }
+  #registration table {
+    width: 100%;
+    border-collapse: collapse; }
+  #registration .title {
+    color: #003566;
+    font-weight: bolder;
+    border-bottom: 5px solid #f2f2f2; }
+  #registration .data {
+    border-bottom: 5px solid #f2f2f2; }
+
+td, th {
+  padding: 1.6rem 0.1rem; }
+
+.regis-event, .regis-venue {
+  width: 17%; }
+  .regis-event input, .regis-venue input {
+    width: 90%; }
+
+.regis-date {
+  width: 11%; }
+  .regis-date input {
+    width: 90%; }
+
+.regis-time {
+  width: 10%; }
+  .regis-time input {
+    width: 90%; }
+
+.regis-members {
+  min-width: 7.5rem;
+  width: 15%;
+  vertical-align: middle; }
+  .regis-members img {
+    vertical-align: middle;
+    width: 2.3rem; }
+  .regis-members .candidate {
+    margin: 3px auto; }
+  .regis-members .membername {
+    display: inline-block;
+    min-width: 5rem;
+    vertical-align: middle;
+    width: 61%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+    border: 1px solid #ccc; }
+  .regis-members .candidate_add {
+    width: 100%; }
+  .regis-members .memberedit {
+    display: inline-block;
+    width: 12px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 1.5px;
+    position: relative;
+    cursor: pointer;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #333;
+    font-size: 2rem; }
+  .regis-members .memberedit:hover {
+    background: #eee; }
+  .regis-members .memberadd {
+    display: inline-block;
+    padding: 0 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 3px auto;
+    background: #c60023;
+    color: #eee;
+    cursor: pointer;
+    position: relative; }
+  .regis-members .addbox {
+    position: absolute;
+    left: 2.8rem;
+    top: 1rem;
+    width: 10rem;
+    height: 10rem; }
+
+.regis-miss {
+  width: 4.5rem; }
+
+.regis-note {
+  width: 13%; }
+  .regis-note textarea {
+    width: 95%;
+    height: 5rem; }
+
+.regis-edit {
+  width: 8rem; }
+
+.finishbutton, .cancelbutton {
+  display: none; }
+
+button {
+  width: 5rem;
+  padding: 0.5rem;
+  background: #0077b3;
+  color: #f2f2f2; }
+
+.duty-con {
+  text-align: left;
+  min-height: 5.5rem;
+  margin-top: 0.5rem;
+  background-color: white; }
+  .duty-con div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle; }
+  .duty-con .duty-btn {
+    position: relative;
+    float: right;
+    padding-right: 0.5rem; }
+    .duty-con .duty-btn button {
+      margin: 0.2rem 0;
+      padding: 0.4rem 1rem;
+      width: 100%; }
+  .duty-con .candidate {
+    width: 95%; }
+
+.regis-edit.duty-btn {
+  top: 0.75rem;
+  width: 5rem; }
+
+  

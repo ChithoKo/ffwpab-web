@@ -1,0 +1,199 @@
+/*
+* @Author: CharlesKo
+* @Date:   2017-10-12 00:24:54
+* @Last Modified by:   CharlesKo
+* @Last Modified time: 2017-11-16 02:08:15
+*/
+
+
+body {
+  width: 100%;
+  margin: 0; }
+
+.content {
+  width: 100%;
+  margin: 8rem 0 5rem 0;
+  border: 1px solid orange; }
+
+#subnavi {
+  margin: 6rem auto 2.5rem auto;
+  text-align: center;
+  border: 1px solid orange; }
+
+.subnavi {
+  display: inline-block;
+  width: 150px;
+  margin: 1rem 0.5rem;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: bold; }
+
+#notice {
+  margin: 30px;
+  width: 30%;
+  border: 1px solid orange;
+  position: relative;
+  float: right;
+  font-size: 1.3rem; }
+  #notice h2 {
+    font-size: 1.8rem;
+    padding: 1rem; }
+
+.notice {
+  border: 1px solid orange;
+  min-height: 4rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem; }
+  .notice .notice-date {
+    display: inline-block;
+    width: 10%;
+    min-width: 4rem;
+    vertical-align: top;
+    border: 1px solid orange; }
+    .notice .notice-date span {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      line-height: 2rem;
+      border: 1px solid orange; }
+  .notice .notice-content {
+    display: inline-block;
+    width: 80%;
+    text-indent: 1rem;
+    vertical-align: top;
+    padding: 0.5rem;
+    position: relative;
+    border: 1px solid orange; }
+    .notice .notice-content p {
+      display: none; }
+
+.index-title {
+  width: 65%;
+  min-width: 48rem;
+  overflow: hidden;
+  text-align: right; }
+  .index-title div {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold; }
+  .index-title .content-title {
+    cursor: pointer; }
+  .index-title #duty-list {
+    border-bottom: 3px solid #c60023; }
+
+.event-container {
+  display: none; }
+
+.duty-container, .event-container {
+  width: 65%;
+  min-width: 48rem;
+  overflow: hidden;
+  border: 1px solid orange; }
+
+.duty, .event {
+  width: 90%;
+  min-width: 48rem;
+  position: relative;
+  float: right;
+  margin: 2.5rem auto 0rem auto;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  overflow: hidden;
+  border: 1px solid #e9ebee;
+  border-radius: 5px;
+  background: #fff; }
+  .duty .line-line, .event .line-line {
+    position: absolute;
+    left: 46%;
+    top: 2rem;
+    bottom: 2rem;
+    height: auto;
+    border: 1.5px solid #999; }
+
+.finished {
+  display: none; }
+
+.duty-vt, .event-vt {
+  position: relative;
+  float: left;
+  width: 46%;
+  height: 100%;
+  min-height: 16rem;
+  margin: 2rem 6rem 2rem 0; }
+  .duty-vt .duty-title, .duty-vt .event-title, .event-vt .duty-title, .event-vt .event-title {
+    padding: 1rem; }
+    .duty-vt .duty-title h2, .duty-vt .event-title h2, .event-vt .duty-title h2, .event-vt .event-title h2 {
+      font-size: 1.8rem;
+      border: none; }
+  .duty-vt div, .event-vt div {
+    text-align: center; }
+  .duty-vt h2, .duty-vt p, .event-vt h2, .event-vt p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc; }
+  .duty-vt h2, .event-vt h2 {
+    font-size: 1rem; }
+  .duty-vt p, .event-vt p {
+    max-width: 76%; }
+
+.duty-details, .event-details {
+  padding: 3rem 0 0 0;
+  width: 100%; }
+  .duty-details .duty-gallery, .duty-details .event-gallery, .event-details .duty-gallery, .event-details .event-gallery {
+    width: 85%;
+    margin: 0 auto; }
+  .duty-details img, .event-details img {
+    width: 6rem;
+    height: auto;
+    display: inline-block;
+    border: 0.1rem solid orange; }
+
+.duty-note p, .duty-note span, .event-note p, .event-note span {
+  display: inline-block;
+  padding: 1.5rem;
+  vertical-align: top; }
+.duty-note p, .event-note p {
+  font-size: 15px;
+  padding-left: 0; }
+
+.duty-member h2, .event-pic h2 {
+  font-size: 1.3rem; }
+.duty-member li, .event-pic li {
+  display: inline-block;
+  list-style-type: none;
+  width: 20%;
+  margin: 0 3px; }
+.duty-member .candidate, .event-pic .candidate {
+  margin: 3px auto;
+  width: 95%;
+  min-width: 7rem; }
+  .duty-member .candidate img, .event-pic .candidate img {
+    vertical-align: middle;
+    width: 2.3rem;
+    border: none; }
+.duty-member .membername, .event-pic .membername {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-indent: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative; }
+  .duty-member .membername .candidate-time, .event-pic .membername .candidate-time {
+    position: absolute;
+    bottom: 2px;
+    font-size: 10px;
+    line-height: 5px;
+    color: #90949c; }
+
+  

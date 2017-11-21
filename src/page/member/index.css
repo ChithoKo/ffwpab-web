@@ -1,0 +1,59 @@
+/*
+* @Author: CharlesKo
+* @Date:   2017-10-13 17:58:40
+* @Last Modified by:   CharlesKo
+* @Last Modified time: 2017-11-19 03:47:29
+*/
+
+.members {
+  width: 70%;
+  margin: 8rem auto 0 auto;
+  border: 1px solid orange; }
+  .members .member-con {
+    width: 46%;
+    height: 100px;
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    border: 2px solid #e9ebee;
+    border-radius: 10px; }
+    .members .member-con a {
+      text-decoration: none;
+      color: #365899; }
+  .members .member-con:hover {
+    background: #e6f2ff; }
+  .members .member-img-holder {
+    display: inline-block;
+    width: 80px;
+    margin: 0 0.4rem; }
+  .members img {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle; }
+  .members p {
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+    width: 55%;
+    height: 100px;
+    vertical-align: middle; }
+    .members p span {
+      display: inline-block;
+      margin: 0;
+      width: 70%;
+      color: #929292;
+      line-height: 1rem; }
+  .members .member-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 2rem; }
+
+@media only screen and (max-width: 800px) {
+  .members {
+    margin-top: 3rem; }
+    .members .member-con {
+      width: 95%;
+      margin: 0.5rem; } }
+@media only screen and (max-width: 480px) {
+  .members {
+    width: 100%; } }

@@ -1,0 +1,18 @@
+
+{{#dutyRegisList}}
+<div class="member-regis-con regis-con">
+	<div class="duty-member list-attr">{{username}}</div>
+	<div class="duty-post list-attr">{{title}} {{tnum}}</div>
+	<div class="duty-name list-attr">{{dutyname}}</div>
+	<div class="duty-date list-attr">
+		<div class="date-date">{{date}}</div>
+		<div class="date-time">{{duty_starttime}} - {{duty_endtime}}</div>
+	</div>
+	<div class="duty-time list-attr">
+		<div class="starttime"><input type="text" name="" value='{{atd_starttime}}'></div>
+		-
+		<div class="endtime"><input type="text" name="" value='{{atd_endtime}}'></div>
+	</div>
+	<div class="duty-approve list-attr"><span class="img-helper"></span><button>Approve</button></div>
+</div>
+{{/dutyRegisList}}

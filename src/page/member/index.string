@@ -1,0 +1,11 @@
+
+{{#memberList}}
+<div class='member-con'>
+	<div class='member-img-holder'><img src='{{iconImg}}' alt="member's icon"/>
+	</div><p>
+		<span class='member-name'><a href='#'>{{username}}</a></span>
+		<span class='member-post'>{{title}} {{tnum}}</span>
+		<span class="member-title">Member</span>
+	</p>
+</div>
+{{/memberList}}

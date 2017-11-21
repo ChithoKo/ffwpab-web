@@ -1,0 +1,9 @@
+
+{{#memberRegisList}}
+<div class="member-regis-con regis-con">
+	<div class="member-name list-attr">{{username}}</div>
+	<div class="member-post list-attr">{{title}} {{tnum}}</div>
+	<div class="member-time list-attr">{{date}}</div>
+	<div class="member-approve list-attr"><span class="img-helper"></span><button>Approve</button></div>
+</div>
+{{/memberRegisList}}

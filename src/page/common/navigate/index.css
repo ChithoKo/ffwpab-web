@@ -1,0 +1,193 @@
+/*
+* @Author: CharlesKo
+* @Date:   2017-10-13 02:21:04
+* @Last Modified by:   CharlesKo
+* @Last Modified time: 2017-11-19 04:02:56
+*/
+
+body {
+  margin: 0; }
+
+#nav {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #222;
+  color: #f2f2f2;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #nav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    width: 100%;
+    height: 100%; }
+
+#navContain {
+  width: 90%;
+  margin: 0 auto; }
+
+.nav {
+  vertical-align: middle;
+  height: 60px; }
+
+#nav-icon {
+  position: relative;
+  float: left;
+  color: #f2f2f2;
+  padding: 0 0.5rem; }
+  #nav-icon img {
+    width: 3rem;
+    vertical-align: middle; }
+  #nav-icon h1 {
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    margin: 0; }
+    #nav-icon h1 span {
+      text-decoration: underline; }
+
+#nav-options {
+  margin: 0 auto;
+  width: 500px;
+  width: 40.5%;
+  max-width: 41.666rem;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold; }
+  #nav-options .img-helper {
+    display: none; }
+  #nav-options ul {
+    height: 60px; }
+  #nav-options li {
+    height: 60px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 0.1%;
+    width: 20.5%;
+    position: relative; }
+  #nav-options a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #999; }
+  #nav-options a:hover {
+    border-bottom: 7px solid #009999;
+    color: #fff; }
+  #nav-options .admin-icon {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 22%;
+    line-height: 0.1;
+    font-size: 1rem;
+    color: orange; }
+
+#nav-user {
+  float: right; }
+  #nav-user #user-sicon {
+    height: 60px;
+    margin-top: 0;
+    position: relative;
+    padding: 0; }
+    #nav-user #user-sicon img {
+      display: inline-block;
+      width: 50px;
+      vertical-align: middle; }
+    #nav-user #user-sicon #user-name {
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 18px;
+      font-weight: bold;
+      height: 60px;
+      width: 120px;
+      vertical-align: middle;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    #nav-user #user-sicon a {
+      color: #f2f2f2;
+      text-decoration: none;
+      display: block; }
+  #nav-user #user-options {
+    display: none;
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: -3px 5px 20px #999;
+    font-size: 1.3rem; }
+    #nav-user #user-options li {
+      list-style-type: none;
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      text-align: center; }
+      #nav-user #user-options li a {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #ccc;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #666; }
+    #nav-user #user-options li:hover {
+      background-color: #eee;
+      font-weight: bold; }
+      #nav-user #user-options li:hover a {
+        color: #2d5986; }
+
+#user-sicon:hover {
+  background: #333; }
+  #user-sicon:hover #user-options {
+    display: block; }
+
+#nav-options .option-title {
+  display: none; }
+
+@media only screen and (max-width: 800px) {
+  #navContain {
+    width: 100%; }
+
+  #nav-icon {
+    padding: 0; }
+    #nav-icon h1 {
+      font-size: 15px; }
+    #nav-icon img {
+      width: 22px; }
+
+  #nav-options {
+    width: 100%; }
+    #nav-options .img-helper {
+      display: inline; }
+    #nav-options .option-title {
+      display: inline-block;
+      font-size: 2.5rem;
+      padding-top: 18px; }
+    #nav-options ul {
+      margin-top: -5px;
+      display: none; }
+    #nav-options li {
+      display: block;
+      width: 100%;
+      margin: 0;
+      background: #222; }
+    #nav-options a {
+      width: 90%;
+      box-sizing: border-box;
+      border-bottom: 1px solid #aaa; }
+
+  #nav-user #user-sicon #user-name {
+    padding: 0 0 0 10px;
+    width: 110px; } }
+    

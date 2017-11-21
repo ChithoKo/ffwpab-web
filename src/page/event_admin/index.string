@@ -1,0 +1,13 @@
+
+{{#eventList}}
+<div class="event-con events">
+	<div class="event-date editable-input"><span>{{date}}</span> ({{wkday}})
+	</div><div class="event-time"><div class='event-starttime editable-input'><span>{{starttime}}</span></div><br/>-<br/><div class='event-endtime editable-input'><span>{{endtime}}</span></div>
+	</div><div class="event-venue editable-input"><span>{{venue}}</span>
+	</div><div class="eventname editable-input"><span>{{eventname}}</span>
+	</div><div class="event-pic editable-input"><span>{{pic}}</span>
+	</div><div class="event-note editable-textarea"><span>{{note}}</span>
+	</div><div class="idvalue"><span>{{meetid}}</span>
+	</div><div class="event-btn"><button class='edit-btn'>Edit</button> <button class='del-btn'>Delete</button> <button class='submit-btn'>Finish</button> <button class='cancel-btn'>Cancel</button></div>
+</div>
+{{/eventList}}

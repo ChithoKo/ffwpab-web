@@ -1,0 +1,33 @@
+/*
+* @Author: CharlesKo
+* @Date:   2017-10-13 02:23:53
+* @Last Modified by:   CharlesKo
+* @Last Modified time: 2017-11-19 03:40:08
+*/
+
+#subnavi {
+  position: relative;
+  height: 4.1666rem;
+  width: 7.5rem;
+  margin: 8rem auto 1.666rem 6.666rem;
+  background-color: white; }
+  #subnavi .content {
+    width: 100%;
+    line-height: 4.1666rem;
+    text-align: center;
+    border-left: 2px dashed gainsboro;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: #8c8c8c; }
+  #subnavi .color {
+    position: absolute;
+    top: 0;
+    left: -4.1666rem;
+    border: 2.0833rem solid transparent;
+    border-right-color: white; }
+
+@media only screen and (max-width: 800px) {
+  #subnavi {
+    display: none; } }
+
+/*# sourceMappingURL=subnavi.css.map */

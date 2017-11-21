@@ -1,0 +1,39 @@
+
+{{#dutyList}}
+	<div class="duty">
+		<div class="line-line"></div>
+		<div class="idvalue hide"><span>{{did}}</span></div>
+		<div class="line-line"></div>
+		<div class='duty-vt'>
+			<div class='duty-title'><h2>{{dutyname}}</h2>
+			</div><div><p id='venue'>{{venue}}</p>
+			</div><div><p id='date'>{{date}} ({{wkday}})<br/>{{timemark}}</p>
+			</div><div><p id='time'>{{starttime}} - {{endtime}}</p></div>
+		</div>
+
+		<div class='duty-details'>
+			<div class='duty-member'>
+				<h2>Members:</h2>
+				<ul>
+				{{#atdList}}
+					<li><div class='candidate'><img src='../../image/pekka1.jpg' /><div class='membername'>{{username}}<div class="candidate-time">
+								<span class="starttime">{{starttime}}</span> - <span class="endtime">{{endtime}}</span>
+							</div></div></div></li>
+				{{/atdList}}
+				{{^atdList}}
+					<li><div class='candidate'>/</div></li>
+				{{/atdList}}
+				</ul>
+			</div>
+			<div class='duty-note'><p>note: </p><span>{{note}}</span></div>
+			<div class='duty-gallery'>
+				<img src='../../image/trex1.png'/>
+				<img src='../../image/trix1.png'/>
+			</div>
+		</div>
+		
+	</div>
+{{/dutyList}}
+
+
+

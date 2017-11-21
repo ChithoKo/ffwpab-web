@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%= htmlWebpackPlugin.options.title %> ffwpa b web</title>
+		
+	</head>
+
+	<body>
+
+		<%= require('html-loader!./layout/navigate.html') %>
+		<%= require('html-loader!./layout/sub-navi.html') %>
+
+
+		<div class="page-title">
+			<p>香港聖約翰救傷隊</p>
+			<p>漁民B支隊 隊員表</p>
+		 </div>
+
+		<div class="members">
+			
+			<div class='member-con'>
+				<img src='../../src/image/princess1.jpeg' alt="member's icon"/>
+				<p>
+					<span class='member-name'>Chit</span>
+					<span class='member-post'>member</span>
+				</p>
+			</div>			
+
+		</div>
+
+
+
+		<%= require('html-loader!./layout/footer.html') %>
+
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%= htmlWebpackPlugin.options.title %> ffwpa b web</title>
+		<!-- <link rel='stylesheet' type='text/css' href='../css/main.css' />
+		<link rel='stylesheet' type='text/css' href='../css/navigate.css'/>
+		<link rel='stylesheet' type='text/css' href='../css/subnavi.css' />
+		<link rel='stylesheet' type='text/css' href='../css/personal.css' /> -->
+	</head>
+
+	<body>
+		<%= require('html-loader!./layout/navigate.html') %>
+
+		<!-- -->
+		<div id='user'>
+			<!-- ../../src/image/soldier1.jpg -->
+			<div id='user-icon'><span class='img-helper'></span><div class='img-holder'><img src='../../src/image/princess1.jpeg' placeholder='no image'/><div class='uploadImg img-upload-label'><form><input type="file" name="filesUploaded[]" id='usericonUpload'><label for='usericonUpload'>上載頭像</label></form> </div></div></div>
+			<div class='userinfo'><div class='user' id='user-name'><h1>XXX</h1></div></div>
+			<div class='userinfo'><div class='user' id='user-post'><h1>M 000</h1></div></div>
+			<div id='user-count'>
+				<div class='user-count' id='workingHrs'><h3>當更時間</h3><span>000</span></div>
+				<div class='user-count' id='meetingHrs'><h3>集會時間</h3><span>000</span></div>
+			</div>
+			
+			<div class='userinfo' id='user-status'><span class='editicon'><i class="fa fa-pencil"></i></span><div class='status-note'>告訴我 請告訴我.. 你的想法!</div></div>
+			<!-- <div class='user' id='user-count'>
+				<div class='user-count' id='workingHrs'><h3>當更時間</h3><span></span></div>
+				<div class='user-count' id='meetingHrs'><h3>集會時間</h3><span></span></div>
+			</div> -->
+		</div>
+
+
+		<!-- -->
+		<div id='event-tap'>
+			<div class='event-tap img-upload'>圖片上傳</div>
+			<div class='event-tap img-album'>已有圖片</div>
+			<div class='event-tap tap-finished' >己當更</div>
+			<div class='event-tap tap-upcoming acting' >即將當更</div>
+			<h3>選擇</h3>
+		</div>
+
+
+		<!-- -->
+		<div id='event'></div>
+
+		<div class="gallery"></div>
+
+		<%= require('html-loader!./layout/footer.html') %>
+	</body>
+</html>

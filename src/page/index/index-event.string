@@ -1,0 +1,27 @@
+{{#eventList}}
+<div class="event">
+	<div class="line-line"></div>
+	<div class="idvalue hide"><span>{{meetid}}</span></div>
+	<div class='event-vt'>
+		<div class='event-title'><h2>{{eventname}}</h2>
+		</div><div><p id='venue'>{{venue}}</p>
+		</div><div><p id='date'>{{date}} ({{wkday}})</p>
+		</div><div><p id='time'>{{starttime}} - {{endtime}}</p></div>
+	</div>
+
+	<div class='event-details'>
+		<div class='event-pic'>
+			<h2>負責人:</h2>
+			<ul>
+				<li><div class='candidate'>{{pic}}</div></li>
+			</ul>
+		</div>
+		<div class='event-note'><p>note: </p><span>{{note}}</span></div>
+		<div class='event-gallery'>
+			<img src='../../image/trex1.png'/>
+			<img src='../../image/trix1.png'/>
+		</div>
+	</div>
+	
+</div>
+{{/eventList}}

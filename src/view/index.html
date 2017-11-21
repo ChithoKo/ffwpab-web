@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	
+	<title><%= htmlWebpackPlugin.options.title %> - ffwpa b - </title>
+</head>
+<body>
+	<%= require('html-loader!./layout/navigate.html') %>
+
+	<!-- <div id='subnavi'>
+		<div class='subnavi linkBox' id='navimembers'><a>隊員 (<?php echo getMembersNo()['no']; ?>)</a></div>
+		<div class='subnavi linkBox' id='naviduty'><a>更表</a></div>
+		<div class='subnavi linkBox' id='navievents'><a>日程</a></div>
+	</div> -->
+
+	<div class='content'>
+
+			<div id='notice'>
+				<h2>通知</h2>
+
+				<div class='notice-con'>
+					
+					<div class='notice' >
+						<div class='notice-date'><span class="wkday">Sat</span><span class="date">15/7</span></div>
+						<div class='notice-content'>
+							<h3>asfdakasldjfl;aksflsaj</h3>
+							<p>sfjklasdjfa;lskdfja;sldkfja;slkfj;f</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="index-title">
+				<div class="content-title" id='duty-list'>當更</div>
+				<div class="content-title" id='event-list'>集會</div>
+				<div></div>
+			</div>
+
+
+			<div class='duty-container'></div>
+
+			<div class='event-container'></div>
+
+
+		</div>
+
+	<%= require('html-loader!./layout/footer.html') %>
+	
+</body>
+</html>
+
+
+
+

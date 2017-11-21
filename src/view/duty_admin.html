@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title><%= htmlWebpackPlugin.options.title %> ffwpa b web</title>
+
+		<!-- <link rel='stylesheet' type='text/css' href='../css/main.css' />
+		<link rel='stylesheet' type='text/css' href='../css/navigate.css'/>
+		<link rel='stylesheet' type='text/css' href='../css/event.css' />
+		<link rel='stylesheet' type='text/css' href='../css/subnavi.css' /> -->
+		
+	</head>
+
+	<body>
+
+		<%= require('html-loader!./layout/navigate.html') %>
+		<%= require('html-loader!./layout/sub-navi.html') %>
+
+
+		<!-- Title of the table -->
+		<div class="page-title">
+			<p>香港聖約翰救傷隊</p>
+			<p>漁民B支隊 當更時間表</p>
+		 </div>
+
+		<div id='registration'>
+
+			<!-- add duty part -->
+				<div id='addduty'>
+					<div class='addduty addtitle'><div class='title-holder'><div class='title-content'>Add Duty</div><div class='title-icon'>+</div></div></div>
+
+					<div class='addduty-content showbox' id='dutyform'>
+						<form action='../manage/doAdminAction.php?act=addDuty' method='post' >
+							<div class='adddutyname'>
+								<p>活動名稱 * </p>
+								<input type='text' placeholder='活動名稱' name='dutyname' />
+							</div>
+
+							<div class='addvenue'>
+								<p>地點 * </p>
+								<input type='text' placeholder='地點' name='venue' />
+							</div>
+
+							<div class='addtimemark'> 
+								<p>Time mark : </p>
+								<p class='subnote'>(e.g. HK17/07132)</p>
+								<input type='text' placeholder='time mark e.g. HK17/07132' name='timemark'  />
+							</div>
+
+							<div class='adddate'>
+								<p >日期 * </p>
+								<p class='subnote'>( 日/月/年 )</p>
+								<input class='addday' type='text' placeholder='日' name='day'  /> ／
+								<input class='addmonth' type='text' placeholder='月' name='month' /> ／
+								<input class='addyear' type='text' placeholder='年' name='year' value="<?php echo date('Y'); ?>" />
+							</div>
+
+							<div class='addstarttime'>
+								<p>開始時間 * </p>
+								<p class='subnote'>( e.g. 10:00 )</p>
+								<input type='text' placeholder='開始時間 e.g. 10:00' name='startHr'  />
+							</div>
+
+							<div class='addendtime'>
+								<p>結束時間 * </p>
+								<p class='subnote'>( e.g. 21:00 )</p>
+								<input type='text' placeholder='結束時間 e.g. 21:00' name='endHr'  />
+							</div>
+
+							<div class='addnote'>
+								<p>note : </p>
+								<textarea></textarea>
+							</div> 
+							<div class='addtotalmem'>
+								<p>需要人數 * </p>
+								<input type='text' placeholder='總人數' name='totalmembers' /> M
+							</div>
+
+							<div class='addsubmit'>
+								<button class='submitbutton' type='button' onclick="javascript:addDutyAdm();"> 提交 </button>
+								<!-- <input type='submit' class='submitbutton'/> -->
+							</div>
+						</form>
+					</div>
+				</div>
+
+			
+				<div class="duty-con duty-con-title" >
+					<div class="registration regis-event"><h3>活動名稱</h3>
+					</div><div class="registration regis-date"><h3>日期</h3>
+					</div><div class="registration regis-time"><h3>時間</h3>
+					</div><div class="registration regis-venue"><h3>地點</h3>
+					</div><div class="registration regis-members"><h3>隊員</h3>
+					</div><div class="registration regis-miss"><h3>尚缺人手</h3>
+					</div><div class="registration regis-note"><h3>備註</h3>
+					</div><div class="registration regis-edit duty-btn"><h3>操作</h3>
+					</div>
+				</div>
+
+				<div class="duties">
+					
+				</div>
+			</div>
+
+			</div>
+
+
+
+		 <%= require('html-loader!./layout/footer.html') %>
+
+	</body>
+</html>

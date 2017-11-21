@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title><%= htmlWebpackPlugin.options.title %> ffwpa b web</title>
+</head>
+<body>
+
+	<div id='contentForm'>
+			<h1 class='contentForm' id='contentHeading'>FFWPA B <span>web</span></h1>
+			<div class='subtitle'><p>Welcome to the website of FFWPA B</p></div>
+			<div class='choice'>
+				<div class='choiceOption activeOption' id='loginOption'>登陸</div>
+				<div class='choiceOption' id='regisOption'>註冊</div>
+			</div>
+
+			<div class='contentForm' id='loginForm'>
+				<form class='loginForm' action='http://localhost/PHP_Project_One/manage/doLogin.php?act=login' method='post'>			<!-- //////////////////  -->
+					<div class='loginForm' id='usernameLog'>
+						<input type='text' class='usernameLog infoLog' name='username' placeholder='用戶名稱' value='' />
+						<div class='usernameLog warning'></div>
+					</div>
+
+					<div class='loginForm' id='passwordLog'>
+						<input type='password' class='passwordLog infoLog' name='password' placeholder='密碼' value=''/>
+						<div class='passwordLog warning'></div>
+					</div>
+
+					<div class='loginForm' id='saveInfo'>
+						<input type='checkbox' name='saveinfo' id='saveinfo' value='1'/><label for='saveinfo'>save password</label> <!--////////////////-->
+					</div>
+
+					<div class='loginForm' id='submitLog'>
+						<button class='submit infoLog' >登陸</button>				<!--////////////////-->
+					</div>
+				</form>
+			</div>
+
+
+			<div class='contentForm' id='regisForm'>
+				<form class='regisForm' action='http://localhost/PHP_Project_One/manage/doRegis.php' method='post'>			<!--////////////////-->
+					<div class='regisForm' id='usernameReg'>
+						<input type='text' class='usernameReg' name='username' placeholder='用戶名稱' value=''/>
+						<div class='usernameReg warning'></div>
+					</div>
+
+					<div class='regisForm' id='passwordReg'>
+						<input type='password' class='passwordReg' name='password' placeholder='密碼' value=''/>
+						<div class='passwordReg warning'></div>
+					</div>
+
+					<div class='regisForm' id='passwordReg2'>
+						<input type='password' class='passwordReg2' name='password2' placeholder='確認密碼' value='' />
+						<div class='passwordReg2 warning'></div>
+					</div>
+
+					<div class='regisForm' id='titleReg'>
+						<input type='text' class='titleReg' name='title' placeholder='職階' value=''/>
+						<input type='text' class='numberReg' name='number' placeholder='隊員號碼' value=''/>
+						<div class='titleReg warning'></div>
+					</div>
+
+					<div class='regisForm'>
+						<input type='text' class='emailReg' name='email' placeholder='郵箱' value='' />
+						<div class='warning emailReg'></div>
+					</div>
+
+					<div class='regisForm' id='submitReg'>
+						<button class='regis'>註冊</button>						<!--////////////////-->
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+
+		<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>
